@@ -8,7 +8,7 @@ export default function Contato() {
   return (
     <section id="contato" className="py-20 px-4 max-w-4xl mx-auto">
       <h3 className="text-primary-light font-bold uppercase tracking-widest text-sm mb-4">Contato</h3>
-      <h2 className="text-4xl font-bold dark:text-white mb-6">Vamos construir algo juntos?</h2>
+      <h2 className="text-3xl font-bold dark:text-white mb-6">Vamos construir algo juntos?</h2>
       <p className="text-gray-400 mb-10 max-w-lg">
         Estou em busca de novos desafios como desenvolvedor Front-end, onde minha experiência técnica e visão de design possam agregar valor ao seu time.
       </p>

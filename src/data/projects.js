@@ -2,7 +2,7 @@
 export const projects = [
   {
     id: 1,
-    title: "A Escola de Atenas 1",
+    title: "Rafael Sanzio - A Escola de Atenas",
     type: "Front-end",
     thumb: "/escola_de_atenas_thumb.jpg",
     demo: "#",
