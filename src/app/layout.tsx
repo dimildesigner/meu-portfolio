@@ -35,8 +35,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
-  const schemaData = {
+export default function RootLayout({ children }: { children: React.ReactNode }) {  const schemaData = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Edimilson Teixeira (Eddie)",
