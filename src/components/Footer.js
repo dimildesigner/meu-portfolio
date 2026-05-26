@@ -1,12 +1,33 @@
 export default function Footer() {
   return (
-    <footer className="py-10 text-center border-t border-gray-200 dark:border-gray-800">
-      <p className="text-gray-500 dark:text-gray-400">© 2026 dimil designer.dev. Todos os direitos reservados.</p>
-      <div className="mt-4 space-x-6">
-        <a href="mailto:seu-email@exemplo.com" className="hover:text-primary-light">E-mail</a>
-        <a href="https://github.com/seu-usuario" className="hover:text-primary-light">GitHub</a>
-        <a href="https://linkedin.com/in/seu-usuario" className="hover:text-primary-light">LinkedIn</a>
+    <footer className="py-12 text-center border-t border-border-light dark:border-border-dark font-sans select-none">
+      <p className="text-[10px] text-gray-400 dark:text-gray-500 font-mono tracking-wider">
+        © 2026 DIMIL.DESIGNER.DEV • TODOS OS DIREITOS RESERVADOS
+      </p>
+      <div className="mt-4 flex justify-center gap-6 text-[10px] font-mono text-gray-400 uppercase tracking-widest">
+        <a 
+          href="mailto:dimildesigner@gmail.com" 
+          className="hover:text-primary-light dark:hover:text-accent transition-colors"
+        >
+          E-mail
+        </a>
+        <a 
+          href="https://github.com/dimildesigner" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:text-primary-light dark:hover:text-accent transition-colors"
+        >
+          GitHub
+        </a>
+        <a 
+          href="https://linkedin.com/in/dimildesigner" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:text-primary-light dark:hover:text-accent transition-colors"
+        >
+          LinkedIn
+        </a>
       </div>
     </footer>
-  )
+  );
 }

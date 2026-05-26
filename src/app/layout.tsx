@@ -1,5 +1,21 @@
 import "./globals.css";
 import { Providers } from "@/components/Providers";
+import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import CustomCursor from "@/components/CustomCursor";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Eddie | Front-end Developer & UI Designer",
@@ -25,6 +41,19 @@ export const metadata = {
     "Edimilson Teixeira Portfolio",
   ],
   authors: [{ name: "Edimilson Teixeira (Eddie)" }],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "dimildesigner | Front-end Developer & UX/UI Designer",
     description:
@@ -70,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="pt-BR" className={`${plusJakartaSans.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
       <head>
         {/* Insira o script aqui dentro da tag <head> */}
         <script
@@ -79,7 +108,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen">
-        <Providers>{children}</Providers>
+        <div className="noise-overlay" />
+        <Providers>
+          <CustomCursor />
+          {children}
+        </Providers>
       </body>
     </html>
   );

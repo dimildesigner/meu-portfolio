@@ -1,20 +1,24 @@
 export default function Sobre() {
   return (
-    <section id="sobre" className="py-24 px-4 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-8 dark:text-white border-l-4 border-primary-light pl-4">
-        Sobre
+    <section id="sobre" className="py-32 px-6 max-w-4xl mx-auto border-t border-border-light dark:border-border-dark">
+      <h3 className="text-[11px] font-mono tracking-widest text-primary-light dark:text-accent uppercase mb-2">
+        // TRADUZINDO CONCEITOS
+      </h3>
+      <h2 className="text-3xl sm:text-4xl font-extrabold mb-10 dark:text-white font-sans">
+        Trajetória & Filosofia
       </h2>
-      <div className="space-y-6 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+      
+      <div className="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed text-base sm:text-lg font-sans">
         <p>
-          Com mais de 25 anos de carreira na área criativa, minha trajetória foi moldada pela busca constante em traduzir problemas complexos em <strong>interfaces digitais intuitivas</strong>. A transição para o desenvolvimento <strong>Front-end</strong> foi o passo natural para materializar as experiências que antes desenhava.
+          Com mais de <strong>25 anos de carreira na área criativa</strong>, minha trajetória foi moldada pela busca constante em traduzir problemas complexos em <strong>interfaces digitais memoráveis</strong>. A transição para o desenvolvimento <strong>Front-end</strong> foi o passo natural e consciente para materializar no navegador as experiências que antes desenhava estaticamente.
         </p>
         <p>
-          Como <strong>Desenvolvedor Front-end</strong>, meu diferencial é unir a precisão do código à sensibilidade do <strong>UI/UX Design</strong>. Não apenas escrevo código funcional em <strong>React e Next.js</strong>, mas também garanto que cada pixel e cada animação contribuam para a conversão e satisfação do usuário final.
+          Como <strong>Desenvolvedor Front-end</strong>, meu principal diferencial competitivo é unir a precisão lógica do código à sensibilidade refinada de quem respira <strong>UI/UX Design</strong>. Não apenas escrevo código funcional, modular e escalável em <strong>React, Next.js e TypeScript</strong>, mas atuo como a ponte perfeita entre a engenharia de software e o design visual (<em>Design-to-Code</em>), garantindo que cada transição, espaçamento e micro-interação apoie as métricas de retenção e a satisfação do usuário final.
         </p>
         <p>
-          Minha abordagem é baseada em <strong>Clean Code</strong>, acessibilidade e performance web. Acredito que a tecnologia deve ser um meio para experiências memoráveis. Inspirado pelo minimalismo do design e pela resiliência da natureza — especialmente na arte do Bonsai — aplico o mesmo cuidado e paciência em cada projeto que desenvolvo.
+          Minha abordagem técnica baseia-se nos pilares de <strong>Clean Code</strong>, no desenvolvimento de **Design Systems reutilizáveis**, na conformidade estrita com padrões de <strong>acessibilidade digital (WCAG 2.1 AA)</strong> e na otimização de performance focada em <strong>Core Web Vitals e SEO técnico</strong>. Inspirado pelo minimalismo estético e pela resiliência paciente da arte clássica do <strong>Bonsai</strong>, aplico o mesmo cuidado meticuloso nos detalhes de código e de pixels em cada produto que coloco em produção.
         </p>
       </div>
     </section>
-  )
+  );
 }
